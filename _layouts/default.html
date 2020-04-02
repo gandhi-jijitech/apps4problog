@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include svg-icons.html %}
+        {% include header.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+            <iframe src="https://www.jijitechnologies.com/footer.aspx" scrolling="no" width=100% height=460px id="footeriframe"
+            style="border: none;"> </iframe>
+        <script src="{{ '/assets/js/blog.js' | prepend: site.baseurl }}"></script>
+    </body>
+</html>
+

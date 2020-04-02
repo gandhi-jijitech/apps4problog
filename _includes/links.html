@@ -1,0 +1,12 @@
+<ul>
+  <li>
+    <a href="{{ site.baseurl }}/">Home</a>
+  </li>
+  {% for item in site.menu %}
+  {% if item.title and item.url %}
+  <li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </li>
+  {% endif %}
+  {% endfor %}
+</ul>
