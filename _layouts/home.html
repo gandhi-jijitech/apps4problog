@@ -20,31 +20,33 @@ layout: main
     {% if site.show_hero and paginator == nil or paginator.page == 1 %}
     <!-- Hero -->
     {% assign featured = posts.first %}
-   
+
     <section class="hero" style="background-image: url({{ featured.image }})">
-                       <div class="content">
-                <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
-                    {% if site.date_format == nil %}
-                        {{ featured.date | date: "%m.%d.%Y" }}
-                    {% else %}
-                        {{ featured.date | date: site.date_format }}
-                    {% endif %}
-                </time>
-                <h1 class="title">{{ featured.title }}</h1>
-                <p class="description">{{ featured.subtitle }}</p>
-                <div class="buttons">
-                    <a href="{{ featured.url | prepend: site.baseurl}}" role="button" class="button">
-                        <svg><use xlink:href="#icon-read"></use></svg>
-                        <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
-                    </a>
-                </div>
+        <div class="content">
+            <time datetime="{{ featured.date | date_to_xmlschema }}" class="date">
+                {% if site.date_format == nil %}
+                {{ featured.date | date: "%m.%d.%Y" }}
+                {% else %}
+                {{ featured.date | date: site.date_format }}
+                {% endif %}
+            </time>
+            <h1 class="title">{{ featured.title }}</h1>
+            <p class="description">{{ featured.subtitle }}</p>
+            <div class="buttons">
+                <a href="{{ featured.url | prepend: site.baseurl}}" role="button" class="button">
+                    <svg>
+                        <use xlink:href="#icon-read"></use>
+                    </svg>
+                    <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
     {% endif %}
 
 
     <!-- Posts -->
-    <section id="grid" class="row flex-grid" style="margin-right:3%;margin-left:3%">
+    <section id="grid" class="row flex-grid">
         {% for post in posts %}
         <article class="box-item">
             <span class="category">
@@ -53,7 +55,8 @@ layout: main
                 </a>
             </span>
             <div class="box-body">
-                <a class="cover" href="{{ post.url | prepend: site.baseurl }}" style="max-height:180px">
+                <a class="cover" href="{{ post.url | prepend: site.baseurl }}"
+                    style="display: flex;flex-direction: column;flex: 0 0 20% ! important;max-height: 20% ! important;">
                     {% include loader.html %}
                     {% if post.optimized_image %}
                     <img src="/assets/img/placeholder.png" width="100%" data-url="{{ post.optimized_image }}"
@@ -75,23 +78,24 @@ layout: main
                     {% include new-post-tag.html date=post.date %}
                     {% include read-icon.html %}
                 </a>
-                <div class="box-info">
+                <div class="box-info" >
                     <time datetime="{{ post.date | date_to_xmlschema }}" class="date">
                         {% include date.html date=post.date %}
                     </time>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="max-height:150px;">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >
                         <h2 class="post-title">
-                            {{ post.title | truncate: 90}}
+                            {{ post.title | truncate:90}}
                         </h2>
                     </a>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" style="min-height:155px;max-height:155px;">
-                        <p class="description">{{ post.brief | truncate: 165}}</p>
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+                    >
+                        <p class="description">{{ post.brief | truncate:170}}</p>
                     </a>
-                    <div class="tags" style="bottom:0;position:absolute">
+                    <div class="tags" style="bottom:0;position:absolute" >
                         {% if  post.tags.size > 0 %}
                         <a href="{{ site.baseurl}}/tags#{{post.tags[0] | slugify }}">#{{  post.tags[0] }}</a>
                         {% endif %}
-                       
+
                     </div>
                 </div>
             </div>

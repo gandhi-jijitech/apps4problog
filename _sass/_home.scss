@@ -34,13 +34,15 @@
 .box-item {
   max-height: 600px;
   overflow: hidden;
-  flex: 1 0 $itemMinWidth;
   margin: 0 0 rem(30px);
   display: inline-block;
   min-height: rem(285px);
   transition: all 0.3s;
   position: relative;
   z-index: 1;
+  flex:0 0 300px;
+  // flex:0 0 22% !important;
+  // max-width:22% !important;
 
   @include media(">=sm") {
     margin: 0 rem($itemMargin) rem(30px);
