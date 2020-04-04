@@ -197,13 +197,13 @@ h6 {
   @include mainFont(700);
   margin-top: 0;
   // padding-top: rem(50px);
-  margin-block-start: rem(17px);
-  margin-block-end: rem(17px);
+  margin-block-start: rem(13px);
+  margin-block-end: rem(13px);
 
   @include media(">=sm") {
     margin-top: 0;
-    margin-block-start: rem(17px);
-    margin-block-end: rem(17px);
+    margin-block-start: rem(13px);
+    margin-block-end: rem(13px);
     // padding-top: rem(60px);
   }
 }
