@@ -93,7 +93,10 @@ layout: main
                     </a>
                     <div class="tags" style="bottom:0;position:absolute" >
                         {% if  post.tags.size > 0 %}
-                        <a href="{{ site.baseurl}}/tags#{{post.tags[0] | slugify }}">#{{  post.tags[0] }}</a>
+                        { post.tags.size }
+                        {% for tag in post.tags %}
+                        <a href="{{ site.baseurl}}/tags#{{tag | slugify }}">#{{tag}}</a>
+                        {% endfor %}
                         {% endif %}
 
                     </div>

@@ -11,10 +11,10 @@ email: contact@jijitechnologies.com
 disqus_username: jijitechnologiesblog
 show_hero: true
 menu:
-  - title: About
-    url: https://www.jijitechnologies.com/about-us.aspx
-  - title: Contact
-    url: https://www.jijitechnologies.com/contact-us.aspx
+  # - title: About
+  #   url: https://www.jijitechnologies.com/about-us.aspx
+  # - title: Contact
+  #   url: https://www.jijitechnologies.com/contact-us.aspx
 
 paginate: 12
 logo: /assets/img/logo.png
@@ -31,8 +31,8 @@ twitter_username: jijitech
 
 # Posts Settings
 show_time_bar: true
-show_modal_on_exit: true
-show_modal_on_finish_post: true
+show_modal_on_exit: false
+show_modal_on_finish_post: false
 two_columns_layout: true
 
 

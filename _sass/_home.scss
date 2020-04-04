@@ -21,6 +21,9 @@
 .flex-grid {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+  margin-right:2.5%;
+  margin-left:2.5%;
 }
 
 .title-category {
@@ -29,6 +32,7 @@
   padding: 0 rem(23px);
   text-transform: lowercase;
   color: #fff;
+  text-transform: capitalize;;
 }
 
 .box-item {
@@ -53,13 +57,13 @@
   @for $n from 2 through $maxItemsPerRow {
     $resolution: (2 * $rowMargin) + ($n * $itemMinWidth);
     @include media(">=#{$resolution}") {
-      max-width: calc(100%/#{$n} - #{$itemMargin * 2});
+      max-width: calc(94%/#{$n} - #{$itemMargin * 2});
     }
   }
 
   // Note 2: This sets the maximum number of box items per row.
   @include media(">=#{(2 * $rowMargin) + ($maxItemsPerRow * $itemMinWidth)}") {
-    flex: 1 0 calc(100%/#{$maxItemsPerRow} - #{$itemMargin * 2});
+    flex: 1 0 calc(94%/#{$maxItemsPerRow} - #{$itemMargin * 2});
   }
 
   &:hover {
@@ -126,7 +130,7 @@
 
     h2 {
       margin: rem(10px) 0;
-      font-size: rem(24px);
+      font-size: rem(21px);
       @include mainFont(800);
       color: $accentDark;
       line-height: rem(30px);
@@ -135,7 +139,7 @@
     p {
       margin: 0 0 rem(30px);
       color: darken($lightGray, 20%);
-      font-size: rem(17px);
+      font-size: rem(15px);
       line-height: rem(26px);
     }
 
