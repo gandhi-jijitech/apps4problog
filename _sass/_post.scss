@@ -65,6 +65,10 @@ img + em {
   @include mainFont(300);
 }
 
+p{
+  margin-block-start: rem(13px);
+  margin-block-end: rem(13px);
+}
 p,
 h1,
 h2,
@@ -331,8 +335,7 @@ h6 {
     width: rem(16px);
 
     @include media(">=sm") {
-      display: inline-block;
-      opacity: 0;
+      display:none;
     }
 
     img {
@@ -342,7 +345,8 @@ h6 {
 
   &:hover .anchor,
   .anchor:hover {
-    opacity: 1;
+    display: inline-block;
+
   }
 }
 }
