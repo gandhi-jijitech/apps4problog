@@ -95,32 +95,12 @@
     {% endif %}
 
     {% include share.html %}
-    {% include author.html %}
     {% include comments.html %}
     {% include recommendation.html %}
     <iframe src="https://www.jijitechnologies.com/footer.aspx" scrolling="no" width=100% height=460px id="footeriframe"
         style="border: none;"> </iframe>
     <script src="{{ '/assets/js/blog.js' | prepend: site.baseurl }}"></script>
-    {% assign author = site.authors | where: "name", post.author | first %}
-    {% assign author_urls = '' %}
-    {% if author.github_username %}
-    {% assign author_urls = author_urls | append: '"https://github.com/' | append: author.github_username | append: '",' %}
-    {% endif %}
-    {% if author.facebook_username %}
-    {% assign author_urls = author_urls | append: '"https://www.facebook.com/' | append: author.facebook_username | append: '",' %}
-    {% endif %}
-    {% if author.twitter_username %}
-    {% assign author_urls = author_urls | append: '"https://twitter.com/' | append: author.twitter_username | append: '",' %}
-    {% endif %}
-    {% if author.medium_username %}
-    {% assign author_urls = author_urls | append: '"https://medium.com/@' | append: author.medium_username | append: '",' %}
-    {% endif %}
-    {% if author.instagram_username %}
-    {% assign author_urls = author_urls | append: '"https://www.instagram.com/' | append: author.instagram_username | append: '",' %}
-    {% endif %}
-    {% if author.linkedin_username %}
-    {% assign author_urls = author_urls | append: '"https://www.linkedin.com/in/' | append: author.linkedin_username | append: '",' %}
-    {% endif %}
+    
 
     <script type="application/ld+json">
         {
@@ -136,20 +116,7 @@
             "inLanguage": "{{ site.language }}",
             "dateCreated": "{{ page.date | date: '%Y-%m-%d/' }}",
             "datePublished": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}",
-            "author": {
-                "@type": "Person",
-                "name": "{{ author.display_name }}",
-                {% if author.photo %}
-                "image": "{{ author.photo }}",
-                {% else %}
-                "image": {{ "/assets/img/user.jpg" | prepend: site.baseurl | prepend: site.url }},
-                {% endif %}
-                "jobTitle": "{{ author.position }}",
-                "url": "{{ author.url | prepend: site.baseurl | prepend: site.url }}",
-                "sameAs": [
-                    {{ author_urls | split: "," | join: "," }}
-                ]
+            "dateModified": "{{ page.date | date: '%Y-%m-%d/' }}"
             },
             "publisher": {
                 "@type": "Organization",
