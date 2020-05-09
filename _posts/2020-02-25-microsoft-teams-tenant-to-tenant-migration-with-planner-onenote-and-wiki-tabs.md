@@ -7,6 +7,17 @@ tags: [Teams Migrator,Tenant to Tenant Migrator,Wiki Tab Migrator,One Note Tab M
 image: /assets/img/microsoft-teams-tenant-to-tenant-migration-with-planner-onenote-and-wiki-tabs/ms-teams-migration-banner.png
 ---
 
+Below is the list of few most wanted reports
+|Tasks|Reports|
+|---|---|
+| All Tasks                            | Report of all tasks across all plans in a single view                  |
+| All Tasks by Plan                    | Report of all tasks filtered by Plan                                   |
+| All Tasks by Bucket                  | Report of all tasks filtered by bucket                                 |
+| All Tasks by Assigner                | Report of all tasks filtered by person who assigned the task           |
+| All Tasks by Assignee                | Report of all tasks filtered by person who works on it                 |
+| Top N busy members in next N days    | Reports you the members with most tasks for next N days                |
+| Tasks with no due date               | Reports you the tasks from all plans that has no due date set          |
+| Top N Members with unfinished tasks  | Reports you the members whose tasks are not completed beyond due date  |
 Microsoft Teams is an excellent communication and collaboration tool as
 it combines all users in your organization to chat, video calls, file
 storage, and other Office 365 app integration in one place. Microsoft
