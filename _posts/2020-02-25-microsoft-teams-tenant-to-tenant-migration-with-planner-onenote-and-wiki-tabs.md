@@ -6,7 +6,9 @@ description: Microsoft Teams is an excellent communication and collaboration too
 tags: [Teams Migrator,Tenant to Tenant Migrator,Wiki Tab Migrator,One Note Tab Migrator,Planner Tab Migrator]
 image: /assets/img/microsoft-teams-tenant-to-tenant-migration-with-planner-onenote-and-wiki-tabs/ms-teams-migration-banner.png
 ---
-
+In some instances, the Teams and its channel needs to migrate from One
+Office 365 Group to another. It can be in the same tenant or another
+tenant. Some cases are:
 Below is the list of few most wanted reports
 |Tasks|Reports|
 |---|---|
@@ -23,10 +25,6 @@ it combines all users in your organization to chat, video calls, file
 storage, and other Office 365 app integration in one place. Microsoft
 Teams is the widely accepted and adopted tool for enterprises using
 Office 365.
-
-In some instances, the Teams and its channel needs to migrate from One
-Office 365 Group to another. It can be in the same tenant or another
-tenant. Some cases are:
 
 “Move Teams and its Channels for information flow between different
 departments. “
