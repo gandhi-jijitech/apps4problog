@@ -9,6 +9,7 @@ image: /assets/img/microsoft-teams-tenant-to-tenant-migration-with-planner-oneno
 In some instances, the Teams and its channel needs to migrate from One
 Office 365 Group to another. It can be in the same tenant or another
 tenant. Some cases are:
+
 Below is the list of few most wanted reports
 |Tasks|Reports|
 |---|---|
