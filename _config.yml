@@ -45,7 +45,7 @@ categories_folder: category
 
 
 # Build settings
-markdown: MyCustomProcessor
+markdown: Kramdown
 highlighter: rouge
 permalink: /:title
 collections:

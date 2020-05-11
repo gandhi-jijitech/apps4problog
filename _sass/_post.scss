@@ -760,3 +760,52 @@ color: #404040;
 .next{
   float:right
 }
+table{
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 15px !important;
+  line-height: 1.42857143;
+  color: #333;
+  border-color: grey;
+  thead{
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    tr{
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+      th{
+        text-align:center !important;
+        font-size: 17px;
+      }
+   }
+  }
+ 
+  tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+    tr{
+      display: table-row;
+      vertical-align: inherit;
+      border-color: inherit;
+      &:nth-child(odd){
+        background-color: #f9f9f9;
+      }
+      td{
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+        display: table-cell;
+        text-align: justify !important;
+      }
+    }
+  }
+  
+}
