@@ -34,23 +34,6 @@ In some instances, the Teams and its channel needs to migrate from One
 Office 365 Group to another. It can be in the same tenant or another
 tenant. Some cases are:
 
- | A  | B  | C  |
- |:---|:---|:---|
- | 1  | Name | Toast |
- | 2  | Name | Server |
- 
-Below is the list of few most wanted reports
-|Tasks|Reports|
-|---|---|
-| All Tasks                            | Report of all tasks across all plans in a single view                  |
-| All Tasks by Plan                    | Report of all tasks filtered by Plan                                   |
-| All Tasks by Bucket                  | Report of all tasks filtered by bucket                                 |
-| All Tasks by Assigner                | Report of all tasks filtered by person who assigned the task           |
-| All Tasks by Assignee                | Report of all tasks filtered by person who works on it                 |
-| Top N busy members in next N days    | Reports you the members with most tasks for next N days                |
-| Tasks with no due date               | Reports you the tasks from all plans that has no due date set          |
-| Top N Members with unfinished tasks  | Reports you the members whose tasks are not completed beyond due date  |
-
 Microsoft Teams is an excellent communication and collaboration tool as
 it combines all users in your organization to chat, video calls, file
 storage, and other Office 365 app integration in one place. Microsoft
