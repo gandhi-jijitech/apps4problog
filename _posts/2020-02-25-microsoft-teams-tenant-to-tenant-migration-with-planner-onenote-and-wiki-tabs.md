@@ -113,3 +113,39 @@ Please write to us at the below email address for questions.
 
 **Support:**
 [support@jijitechnologies.com](mailto:support@jijitechnologies.com)
+
+Export / Import tasks using Excel in [Apps4.Pro Planner Manager](https://apps4.pro/planner-manager.aspx) solves many purposes and saves time. This helps users in following ways:
+
+ 
+
+- For reporting purposes
+- Use for ad-hoc needs such as filtering, categorizing, sorting.
+- Create new tasks in bulk
+- Import tasks from Trello, Project or other task management systems
+- Can be used as plan te mplates for creating new plans from scratch
+
+ 
+
+Planner fields supported for Export / Import
+
+ 
+
+
+|Title Plan Bucket|Created By Assigned By Assigned Date Time Completed Date Time Completed By  |Categories Description Checklist Attachments |Assigned To Start Date Due Date Percent Complete| 
+|---|----|----|---|
+
+ 
+
+## Export Planner Tasks to Excel
+
+ 
+
+![](/assets/img/import-export-planner-tasks-using-excel/export-task.png)
+
+ 
+
+## Import Planner/Trello Tasks using Excel
+
+ 
+
+![](/assets/img/import-export-planner-tasks-using-excel/import-task.png)
