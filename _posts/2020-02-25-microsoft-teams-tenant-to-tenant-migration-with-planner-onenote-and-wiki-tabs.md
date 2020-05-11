@@ -130,6 +130,7 @@ Planner fields supported for Export / Import
 
 |Title Plan Bucket|Created By Assigned By Assigned Date Time Completed Date Time Completed By|Categories Description Checklist test|test|
 |:--|:--|:--|:--|
+|test|test|test|test
 
  
 
