@@ -12,6 +12,14 @@ image:
 Analysing the team performance is very important aspect for Plan to ensure that it will be completed on time. To do this managers needs a powerful tool to create various Microsoft Planner reports and export it to Excel / CSV / PDF for reporting purposes.
 [**Apps4.Pro Planner Manager**](https://apps4.pro/planner-manager.aspx) includes many build in Microsoft Planner reports which can be filtered, sorted and export / printed.
 
+|Bulk actions|
+|:--|
+|  Change task bucket  |
+|  Update progress  |
+|  Change task assignee  |
+|  Update Start / Due Date  |
+|  Change categories  |
+
 Below is the list of few most wanted reports
 
 |Tasks|Reports|
