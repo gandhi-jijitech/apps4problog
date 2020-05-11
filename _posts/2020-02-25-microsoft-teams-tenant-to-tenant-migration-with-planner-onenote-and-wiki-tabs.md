@@ -13,7 +13,7 @@ Analysing the team performance is very important aspect for Plan to ensure that 
 [**Apps4.Pro Planner Manager**](https://apps4.pro/planner-manager.aspx) includes many build in Microsoft Planner reports which can be filtered, sorted and export / printed.
 
 |Bulk actions|
-|:--|
+|:--:|
 |  Change task bucket  |
 |  Update progress  |
 |  Change task assignee  |
