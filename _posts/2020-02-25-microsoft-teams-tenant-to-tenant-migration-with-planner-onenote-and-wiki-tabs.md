@@ -128,9 +128,8 @@ Export / Import tasks using Excel in [Apps4.Pro Planner Manager](https://apps4.p
 
 Planner fields supported for Export / Import
 
-|Title Plan Bucket|Created By Assigned By Assigned Date Time Completed Date Time Completed By|Categories Description Checklist test|test|
-|:--|:--|:--|:--|
-|test|test|test|test
+|Title Plan Bucket|Created By Assigned By Assigned Date Time Completed Date Time Completed By  |Categories Description Checklist Attachments |Assigned To Start Date Due Date Percent Complete| 
+
 
  
 
